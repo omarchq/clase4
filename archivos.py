@@ -1,5 +1,5 @@
 import os
-archivo="no_existe.txt"
+archivo="creando.txt"
 def decorador(fn):
 	def envoltorio():
 		print"Abriendo archivo...."
@@ -9,7 +9,6 @@ def decorador(fn):
 
 
 	return envoltorio
-
 
 @decorador
 def leer():
@@ -32,17 +31,17 @@ def existe_archivo(archivo):
 		print "Si existe"
 	else:
 		print "No puede encontrarlo"
-		print "Creando un archivo en eso nombre."
+		print "Creando un archivo en ese nombre."
 		f=open("creando.txt", 'a+')
 		f.write("Hola\n")
 		f.close()
+
 #leer()
-#existe_archivo(archivo)
 existe_archivo(archivo)
 
 
 
 
-#def agregar():
+
 	
 		
